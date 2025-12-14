@@ -1,0 +1,64 @@
+
+/* --- Background & Layout --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e3f2fd; /* Same calm blue background */
+    height: 100vh;
+    display: flex; /* Centers the form */
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- The Form Card --- */
+form {
+    background-color: #ffffff;
+    padding: 40px;
+    width: 300px; /* Fixed width for a neat look */
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+}
+
+/* --- Labels --- */
+label {
+    margin-bottom: 5px;
+    color: #1565c0; /* Strong blue text */
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* --- Input Fields --- */
+input {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+/* Highlight the box when clicked */
+input:focus {
+    border-color: #1565c0; 
+}
+
+/* --- The Button --- */
+button {
+    background-color: #1565c0;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0d47a1; /* Darker blue on hover */
+}
