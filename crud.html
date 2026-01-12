@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Records</title>
+    <link rel="stylesheet" href="crud.css">
+</head>
+<body>
+
+    <h2>Manage Records</h2>
+
+    <div class="form-container">
+        <input type="hidden" id="edit-index">
+        <input type="text" id="name" placeholder="Enter Name">
+        <input type="email" id="email" placeholder="Enter Email">
+        <button onclick="saveData()" id="save-btn">Add Data</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+    </table>
+
+    <script src="crud.js"></script>
+
+</body>
+</html>
